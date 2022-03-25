@@ -1,0 +1,345 @@
+*{
+  font-family: 'OCR A Extended', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  
+}
+
+.pokedexcuerpo {
+    height: 342px;
+    width: calc(260px * 2);
+    display: flex;
+    border-radius: 10px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .pokedexcuerpo {
+      width: 90%;
+    }
+  }
+.panelizquierdo {
+    background: rgb(165, 19, 19);
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    display: grid;
+    color:white;
+    border: solid black 3px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 7px;
+  }
+
+  .pantallageneral{
+   /* background-color: aqua;*/
+    max-width: 100%;
+    margin: 5px auto;
+    padding: 5PX;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0px; /*Separacion*/
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "luces"
+                          "screen-container"
+                         "caja1"
+                         "boton-flechas";
+
+  }
+
+
+ 
+ .luces{
+   display: flex;
+   height: 100%;
+   border-radius: 5px;
+   border: solid black 2px; 
+   
+ }
+ .text{
+   font-size: 12px;
+   text-align: center;
+ }
+ 
+ .zona-pantalla{
+   text-align: center;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+  
+ }
+ 
+ .pantalla-pokemon {
+   width: 120px;
+   height: 120px;
+   border: solid black;
+   border-radius: 3% 3% 3% 3%;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+ }
+ 
+ .contorno-pantalla {
+   width: 140px;
+   height: 140px;
+   border: solid black;
+   border-radius: 5% 5% 5% 20%;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(192, 184, 184);
+ }
+ .boton{
+   width: 55px;
+   height: 22px;
+   font-size: 12px;
+   font-weight: 500;
+   background-color: #2633e2;
+   border-radius: 5px;
+   color: white;
+   text-align: center;
+   cursor: pointer;
+ }
+ 
+ .input{
+   max-width: 85%;
+   height: 65%;
+ }
+ 
+ 
+ 
+ .caja1{
+   max-width: 100%;
+   margin: 5px auto;
+   display: grid;
+   padding: 5PX;
+   grid-gap: 5px; /*Separacion*/
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(1, auto);
+   grid-template-areas: "input boton ";
+ }
+ 
+ .boton-flechas {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .boton-vertical {
+   position: absolute;
+   transform: rotate(90deg);
+   background-color:#464649;
+   border-radius: 5px;
+   height: 10px;
+   width: 45px;
+   border: 2px solid black;
+   margin-left: 100px;
+ }
+ 
+ .boton-horizontal {
+   position: absolute;
+   background-color: #464649;
+   border-radius: 5px;
+   height: 10px;
+   width: 45px;
+   border: 2px solid black;
+   margin-left: 100px;
+ }
+ 
+ .boton-circulo {
+   height: 5px;
+   width: 5px;
+   border-radius: 50%;
+   border: solid black 2px;
+   z-index: +2;
+   margin-left: 75px;
+ }
+ 
+ 
+ .boton-horizontal2 {
+   position: absolute;
+   background-color: #0c912d;
+   border-radius: 5px;
+   height: 10px;
+   width: 45px;
+   border: 2px solid black;
+   margin-right: 180px;
+ }
+ 
+ .boton-circulo2 {
+   background-color: #f7f310;
+   height: 20px;
+   width: 20px;
+   border-radius: 50%;
+   border: solid black 2px;
+   margin-right: 0px;
+ }
+
+ button:hover{
+  
+  box-shadow: 3px 3px 3px rgba(55, 42, 236, 0.7);
+}
+.boton-circulo2:hover,
+.boton-circulo3:hover{
+  box-shadow: 2px 2px 2px rgba(222, 235, 52, 0.7);
+}
+
+
+.boton-horizontal2:hover,
+.boton-horizontal3:hover,
+.boton-horizontal4:hover
+{
+  box-shadow: 2px 2px 2px rgba(10, 124, 35, 0.7);
+}
+
+  .panelderecho {
+    background: rgb(165, 19, 19);
+    box-sizing: border-box;
+    position: relative;
+    color: white;
+    height: 90%;
+    top: 10%;
+    width: 50%;
+    display: grid;
+    border: solid black 3px;
+    border-bottom: solid black 3px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 7px;
+  
+  }
+
+  .pantallageneral2{
+    width: 85%;
+    margin: 5px auto;
+    padding: 5PX;
+    display: grid;
+    grid-gap: 0px; 
+    padding: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "pantalla2"
+                          "cuadros"
+                         "botonesi";
+    
+  }
+
+
+  .green-screen {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+    border: solid black 2px;
+    background-color: #3ab47d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .pantalla2 {
+    display: grid;
+    background-color: #3ab47d;
+    width: 90%;
+    height: 75%;
+    color: #38383b;
+    font-family: 'OCR A Extended', sans-serif;
+    font-weight:600;
+    border-radius: 5px;
+    border: solid black 2px; 
+ 
+    padding: 10px;
+    
+  }
+
+
+.boton-horizontal3 {
+  position: absolute;
+  background-color: #0c912d;
+  border-radius: 5px;
+  height: 20px;
+  width: 45px;
+  border: 2px solid black;
+
+}
+.boton-horizontal4 {
+  position: absolute;
+  background-color: #0c912d;
+  border-radius: 5px;
+  height: 20px;
+  width: 45px;
+  border: 2px solid black;
+}
+
+.boton-circulo3 {
+  background-color: #f7f310;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid black 2px;
+}
+
+.caja{
+  margin: 1px;
+  text-align: center;
+  height: 15px;
+}
+
+.cuadrosx div{
+  background-color: #11a2e6;
+  padding: 2px;
+
+}
+
+.cuadrosx{
+  display: grid;
+}
+
+@media(min-width:120px){
+  .cuadrosx{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+
+.cajay{
+  margin: 1px;
+  text-align: center;
+  height: 15px;
+}
+.cuadrosy div{
+  
+  padding: 2px;
+
+}
+
+.cuadrosy{
+  display: grid;
+}
+
+@media(min-width:520px){
+  .cuadrosy{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media screen and (max-width:768px){
+  .pantallageneral{
+    grid-template-areas: "luces"
+                          "screen-container"
+                          "caja1"
+                           "boton-flechas";
+      
+}}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./pokedexLaunchX.css">
+    <link href="http://fonts.cdnfonts.com/css/ocr-a-extended" rel="stylesheet">
+    <style>
+      @import url('http://fonts.cdnfonts.com/css/ocr-a-extended');
+      </style>
+
+</head>
+<body>
+    <div class="pokedexcuerpo">
+        <div class="panelizquierdo">
+        <div class="pantallageneral">
+          <div class="luces">
+            <svg width="40px" height="40px">
+              <circle cx="20" cy="20" r="15" stroke="black" stroke-width="2" fill="blue" />
+            </svg>   
+            <svg  width="20px" height="20px">
+                <circle cx="10" cy="10" r="8" stroke="black" stroke-width="2" fill="yellow" />
+              </svg>   
+              <svg width="20px" height="20px">
+                <circle cx="10" cy="10" r="8" stroke="black" stroke-width="2" fill="red" />
+              </svg>   
+              <svg width="20px" height="20px">
+                <circle cx="10" cy="10" r="8" stroke="black" stroke-width="2" fill="green" />
+              </svg> 
+              <br>
+              
+              
+                
+              <!--  -->
+            </div>
+      
+           <div class="zona-pantalla">
+             <div class="contorno-pantalla">
+               <div class="pantalla-pokemon">
+           <img src="./pokeball.png" alt="pokemon" id="pokeImg" width="110px"> 
+          </div>
+          </div>
+        </div>
+       
+        <div class="caja1">
+           <input class="input" type="text" placeholder="Nombre del Pokemon" id="pokeName" name="pokeName"> 
+           <button class="boton" onclick="fetchPokemon()">Buscar</button>
+           
+          </div>
+          <div class="boton-flechas">
+            <div class="boton-horizontal2"></div>
+            <div class="boton-circulo2"></div>
+            <div class="boton-vertical"></div>
+            <div class="boton-horizontal"></div>
+            <div class="boton-circulo"></div>
+           </div>
+        </div>
+    </div>
+
+        <div class="panelderecho">
+          <div class="pantallageneral2">
+           <div class="pantalla2">
+           <div class="pesopokemon" id="pesopokemon">Peso: </div> 
+           <div class="alturapokemon" id="alturapokemon">Altura: </div> 
+           <div class="tipopokemon" id="tipopokemon">Tipo: </div> 
+           <div class="numeropokemon" id="numeropokemon">Id: </div>
+           <div class="movimientopokemon" id="movimientopokemon">Movimiento: </div>
+           <div class="datospokemon" id="datospokemon">Datos: </div>
+           </div>
+           <div class="cuadros">
+             <div class="cuadrosx">
+               <div class="caja"></div>
+               <div class="caja"></div>
+               <div class="caja"></div>
+               <div class="caja"></div>
+               <div class="caja"></div>
+               <div class="caja"></div>
+               <div class="caja"></div>
+               <div class="caja"></div>
+             </div>
+           </div>
+           <div class="botonesi">
+             <div class="cuadrosy">
+              <div class="cajay">
+                <div class="boton-horizontal3"></div>
+              </div>
+              <div class="cajay">
+            <div class="boton-horizontal4"></div>
+          </div>
+          <div class="cajay">
+            <div class="boton-circulo3"></div>
+          </div>
+          </div>
+
+           </div>
+        </div>
+      </div>
+    </div>
+</body>
+<footer>
+    <script src="./pokedexLaunchX.js"></script>
+  
+
+</footer>
+</html>
